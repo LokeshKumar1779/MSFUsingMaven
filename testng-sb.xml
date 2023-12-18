@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="CHROME TESTCASE">
+        <!--        <packages>
+                    <package name= "tests">
+                    </package>
+                </packages>-->
+        <parameter name="browser" value="CHROME"></parameter>
+        <classes>
+            <class name="tests.TestCase01">
+                <methods>
+                    <include name="guestCheckoutUsingDirectBankTransfer"></include>
+                    <include name="loginAndCheckoutUsingDirectBankTransfer"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test name="SAFARI TESTCASE">
+        &lt;!&ndash;        <packages>
+                    <package name= "tests">
+                    </package>
+                </packages>&ndash;&gt;
+        <parameter name="browser" value="SAFARI"></parameter>
+        <classes>
+            <class name="tests.TestCase01">
+                <methods>
+
+                    <include name="loginAndCheckoutUsingDirectBankTransfer"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+</suite>
